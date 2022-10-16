@@ -1,17 +1,20 @@
-#include < stdio.h >
+#include <stdio.h>
 
 /**
- *main-program entry point.
- *Return:0 if no error, non zero if error.
- **/
+ *main - print lowercase a-z
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-		char i;
+	char alpha = 'a';
 
-		for (i = 'a'; i <= 'z'; i++)
-		{
-				putchar(i);
-		}
-				putchar('\n');
-		return (0);
+	while (alpha <= 'z')
+	{
+		putchar(alpha);
+		alpha++;
+	}
+	putchar('\n');
+
+	return (0);
 }
